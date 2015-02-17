@@ -1,0 +1,17 @@
+{
+  "name": "git_log",
+  "version": "0.1.0",
+  "description": "A module for parsing and working with git log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "log",
+    "parser",
+    "library"
+  ],
+  "author": "Shaun Dowling <shaun.dowling@gmail.com> (http://shaundowling.co.uk/)",
+  "license": "BSD"
+}
