@@ -5,13 +5,13 @@ var log = require('../lib/log.js')
 
 describe("log", function () {
   it("should return a string", function () {
-    log(__dirname, function (error, gitlog) {
+    log(__dirname, {},function (error, gitlog) {
       assert.isString(gitlog)
     })
   })
 
   it("should throw an error if no repo exists", function () {
-    log('~/non/existent/repo', function (error, gitlog) {
+    log('~/non/existent/repo', {},function (error, gitlog) {
       assert.isNotNull(error)
     })
   })

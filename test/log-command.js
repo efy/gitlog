@@ -5,7 +5,7 @@ var logcommand = require('../lib/log-command.js')
 
 describe("logcommand", function () {
   it("should return a string", function () {
-    assert.isString(logcommand({}))
+    assert.isString(logcommand())
   })
 
   it("should return the command string for the fields specified", function () {
