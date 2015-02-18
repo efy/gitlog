@@ -8,7 +8,7 @@ describe("logcommand", function () {
     assert.isString(logcommand())
   })
 
-  it("should return the command string for the fields specified", function () {
+  it("should return the correct command string", function () {
     var actualCommand = logcommand()
     assert.include(actualCommand, "commitHash")
     assert.include(actualCommand, "committerName")
