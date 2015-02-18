@@ -11,7 +11,7 @@ describe("log", function () {
   })
 
   it("should throw an error if no repo exists", function () {
-    log('~/non/existent/repo', {},function (error, gitlog) {
+    log('~/non/existent/repo', {}, function (error, gitlog) {
       assert.isNotNull(error)
     })
   })
