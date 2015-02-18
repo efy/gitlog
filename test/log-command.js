@@ -9,9 +9,7 @@ describe("logcommand", function () {
   })
 
   it("should return the command string for the fields specified", function () {
-    var actualCommand = logcommand({
-      fields: ["commitHash", "committerName", "committerDateUnix"]
-    })
+    var actualCommand = logcommand()
     assert.include(actualCommand, "commitHash")
     assert.include(actualCommand, "committerName")
     assert.include(actualCommand, "committerDateUnix")
